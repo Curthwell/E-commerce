@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Bella Decor & Furnitute</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+<style>
+    .mySlides {
+        display: none
+    }
+
+    .w3-left,
+    .w3-right,
+    .w3-badge {
+        cursor: pointer
+    }
+
+    .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0
+    }
+
+    .cart {
+        position: relative;
+        background-color: #fff;
+        color: #212529;
+        font-size: 30px;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .cartAmount {
+        position: absolute;
+        top: -15px;
+        right: -10px;
+        font-size: 16px;
+        background-color: red;
+        color: white;
+        padding: 3px;
+        border-radius: 3px;
+    }
+</style>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">
+                <p>Bella Decor & Furnitute</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Products</a></li>
+             
+                    <li></li><a href="cart.html">
+                        <div class="cart">
+                            <i class="bi bi-cart2"></i>
+                            <div id="cartAmount" class="cartAmount">0</div>
+                        </div>
+                    </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="section-heading text-uppercase">Products</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item" height="200px">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/Furniture/Furniture222222.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Furniture</div>
+                            <div class="portfolio-caption-subheading text-muted">Dining room tables & chairs, Couches,
+                                Drawers & cabinets, Mirrors, Stools & automans, Beds</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/Decor/decoorrr.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Decor</div>
+                            <div class="portfolio-caption-subheading text-muted">Mirrors, Ornaments & statues, Vases,
+                                Lighting, Curtains, Carpets & rugs, Scatter cushions, Home fragrance</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/Appliances/applianceeeees.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Appliances & Tech</div>
+                            <div class="portfolio-caption-subheading text-muted">Coffee machines, Kettles, Toasters,
+                                Juicers, Blenders, Pressure cookers, Air fryers, Irons, Microwaves, Fans, Heaters</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/Kitchen/cookware.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Kitchen & Dining</div>
+                            <div class="portfolio-caption-subheading text-muted">Cookware, Bakeware, Serveware,
+                                Crockery, Cutlery, Coffee & Tea, Chopping boards & Butcher blocks</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Portfolio item 5-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/Bedroom/beddd.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Bedroom & Bathroom</div>
+                            <div class="portfolio-caption-subheading text-muted">Duvet & Pillow covers, Egyptian Cotton,
+                                Blankets & throws, Bath towels & Sets, Bath mats, Matress protectors & Base covers, Bath
+                                & body care</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+
+                    <!-- Portfolio item 6-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/NewInStore/outside.jpeg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">New in Store</div>
+                            <div class="portfolio-caption-subheading text-muted">Outdoor Cooking, Storage Solutions,
+                                Washing & Laundry</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Bella Decor & Furniture 2023</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8" id="shoppi">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Oxford full corner unit</h2>
+                                <p class="item-intro text-muted">Color Black/Grey</p>
+                                <div class="w3-content w3-display-container" style="max-width:800px">
+                                    <img class="mySlides" src="assets/img/Furniture/oxford1.jfif" style="width:100%">
+                                    <img class="mySlides" src="assets/img/Furniture/oxford2.jfif" style="width:100%">
+                                    <img class="mySlides" src="assets/img/Furniture/oxford3.jfif" style="width:100%">
+                                    <img class="mySlides" src="assets/img/Furniture/oxford4.jfif" style="width:100%">
+                                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                                        style="width:100%">
+                                        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                                        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                                            onclick="currentDiv(1)"></span>
+                                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                                            onclick="currentDiv(2)"></span>
+                                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                                            onclick="currentDiv(3)"></span>
+                                        <span class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                                            onclick="currentDiv(4)"></span>
+
+                                    </div>
+                                </div>
+
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 23 999,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Furniture
+                                    </li>
+                                </ul>
+
+                                <i onclick="decrement()" class="bi bi-dash-lg">
+                                </i><button class="btn btn-primary btn-xl text-uppercase" type="button">
+                                    
+                                    Add to cart.
+                                    
+                                </button><i onclick="increment()" class="bi bi-plus-lg"></i>
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Rita coffee table 90cm</h2>
+                                <p class="item-intro text-muted">Color Clear</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/Furniture/rita3.jfif"
+                                    alt="..." />
+
+                                <p>The elegance of glass with the glamour of gold detailing, this coffee table will
+                                    steal centre stage</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 6 699,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Furniture
+                                    </li>
+                                </ul>
+                                <!-- <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Lawrence media unit</h2>
+                                <p class="item-intro text-muted">Color White</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Furniture/lawrence media unit2.jfif" alt="..." />
+
+                                <p>This modern solid wood media unit is perfect for the super organised home. Details
+                                    like the lower soft open shelf and modular style storage space in a sophisticated
+                                    combination of wood and white, this media unit was made for convenience, style and
+                                    durability.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 9 499,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Furniture
+                                    </li>
+                                </ul>
+                                <!-- <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" -->
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Volve iron standing shelf</h2>
+                                <p class="item-intro text-muted">Color Black</p>
+
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Furniture/volve iron standing shelf.jfif" alt="..." />
+                                <p>Made locally from high quality iron for strength and durability, the slim silhouette
+                                    and elegant style of the Volve standing shelf goes a long way in making your work
+                                    space more productive and living area more inspiring. This large standing shelf is
+                                    perfect for keeping books or other work essentials neat or for adding a touch of
+                                    unique styling to your space.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 9 499,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Furniture
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Madison 1 seater fibreguard velvet</h2>
+                                <p class="item-intro text-muted">Color Charcoal</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Furniture/madison 1 seater fibreguard velvet charcoal.jfif"
+                                    alt="..." />
+                                <p>A beautiful one seater for a luxurious home. The Madison has the good looks of
+                                    yesteryear when beauty was an essential part of the design, and the modern comfort
+                                    we have all come to expect.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 15 999,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Furniture
+                                    </li>
+                                </ul>
+                                <!-- <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Agate nested side tables</h2>
+                                <p class="item-intro text-muted">Color Grey</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Furniture/agate nested side tables.jfif" alt="..." />
+                                <p>Handmade in India, each Agate gemstone occasional table is a unique piece for
+                                    your home. Hand crafted from genuine agates, each with their own distinctive
+                                    style and pattern, these nesting tables bring balance, strength and calm to your
+                                    living space. A beautiful piece, no two are the same.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 4 999,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Interior Design
+                                    </li>
+                                </ul>
+                                <!-- <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Curtain taped melange linen look</h2>
+                                <p class="item-intro text-muted">Color Beige</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Decor/curtain taped melange linen look.jfif" alt="..." />
+                                <p>Keep the light out, and the beauty in. These melange curtains create a beautiful
+                                    frame for your windows when open and a cosy look when closed.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 719,20
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Decor
+                                    </li>
+                                </ul>
+                              <!--   <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Vase organic blown glass blue 25cm</h2>
+                                <p class="item-intro text-muted">Color Blue</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Decor/vase organic blown glass blue.jfif" alt="..." />
+                                <p>A vase that is an artwork in itself, dress up with a couple of curated local stems or
+                                    leave as is for an understated style statement.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 599,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Decor
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Huberta the hippo bowl large</h2>
+                                <p class="item-intro text-muted">Color Metalic</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Decor/rialheim huberta the hippo bow.jfif" alt="..." />
+                                <p>The Huberta bowl was inspired by one of the most famous animals in South African
+                                    history who took a 3 year journey from Zululand to the Eastern Cape. Use this quirky
+                                    and functional piece as a fruit bowl or decor item on a shelf.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 849, 00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Decor
+                                    </li>
+                                </ul>
+                            <!--     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">mirror organic without frame 95x70cm</h2>
+                                <p class="item-intro text-muted">Color Clear</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/Decor/organic wouframe.jfif"
+                                    alt="..." />
+                                <p>This organic shaped wall mirror is made to stand out and works as a functional piece
+                                    of art in your home.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 2 499,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Decor
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Saeco coffee machine gran aroma white</h2>
+                                <p class="item-intro text-muted">Color White</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Appliances/saeco coffee machine gran aroma white.jfif" alt="..." />
+                                <p>The Saeco GranAroma Fully automatic espresso machine makes your personal brew,
+                                    tailored to you! Easily personalize your coffee with taste pre-sets. Intuitively
+                                    personalize aromatic coffees like Cappuccino and Latte Macchiato with pre-set taste
+                                    profiles via the CoffeeMaestro menu and enjoy silky milk froth from our external
+                                    milk carafe - even when making two milk drinks at the same time</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 14 499,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Appliances & Tech
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">taurus toaster stainless steel 2 slice</h2>
+                                <p class="item-intro text-muted">Color Metalic</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Appliances/taurus toaster stainless steel 2 slice.jfif" alt="..." />
+                                <p>Taurus presents the Mytoast II Legend. Golden and crisp toast has never been this
+                                    easy. The stainless steel toaster has two extra wide slots and 5 variable browning
+                                    settings. Includes 3 functions: defrost, reheat and cancel cooking.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 999,99
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Appliances & Tech
+                                    </li>
+                                </ul>
+                              <!--   <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Swan retro dome combo set black 3pc</h2>
+                                <p class="item-intro text-muted">Color Black</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Appliances/swan retro combo set black 3pc.jfif" alt="..." />
+                                <p>The Swan Retro Collection present beautiful retro styled appliances with modern
+                                    features. The Swan Retro Combo Set is the perfect addition to your kitchen!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 1 899,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Appliances & Tech
+                                    </li>
+                                </ul>
+                              <!--   <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">taurus citrus juicer glass 1l</h2>
+                                <p class="item-intro text-muted">Color Clear</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Appliances/taurus citrus juicer glass 1l.jfif" alt="..." />
+                                <p>Get delicious freshly squeezed goodness from the Citrus Glass citrus juicer from
+                                    Taurus. The large 1L glass jug makes this an attractive addition to every kitchen.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 599,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Appliances & Tech
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Russell hobbs easy glide iron</h2>
+                                <p class="item-intro text-muted">color Blue</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Appliances/russell hobbs easy glide iron.jfif" alt="..." />
+                                <p>Doing the ironing is easy and convenient with the Easy-glide steam spray iron. 2400W.
+                                    Dry, steam and spray ironing. Powerful burst of stream and variable steam control.
+                                    Overheat safety protection circuit. Vertical steam, ideal for suits, dresses and
+                                    delicate fabrics. Adjustable thermostat control.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 549, 00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Appliances & Tech
+                                    </li>
+                                </ul>
+                              <!--   <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Robert welch radford coffee spoon set/8</h2>
+                                <p class="item-intro text-muted">Color Metalic</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Kitchen/robert welch radford coffee spoon set81.jfif" alt="..." />
+                                <p>The Radford collection complements every dining experience. This versatility makes it
+                                    a popular choice while the extensive range, which includes specialist dining pieces,
+                                    offers maximum flexibility.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 699,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Kitchen & Dining
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Laguiole cutlery set black 24pc</h2>
+                                <p class="item-intro text-muted">Color Black</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Kitchen/laguiole av cutlery set black 24pc.jfif" alt="..." />
+                                <p>These tools are imbued with French passion and a deep love for food, and are made
+                                    100% in France. Designed with the signature bee on the handle, these are the real
+                                    deal. Set includes six of each of the following: forks, table knives, dessert
+                                    spoons, and teaspoons.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 3 399,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Kitchen & Dining
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Baccarat gourmet stone potset 13pc</h2>
+                                <p class="item-intro text-muted">Color Black</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Kitchen/baccarat gourmet stone potset 13pc.jfif" alt="..." />
+                                <p>The Baccarat gourmet stone cookware aluminium body provides even heat distribution
+                                    reducing cooking times. The non-stick coating is hard wearing and easy to clean.
+                                    Dishwasher & oven safe</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 4 499,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Kitchen & Dining
+                                    </li>
+                                </ul>
+                                <!-- <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">S&P bond lined highball set/4</h2>
+                                <p class="item-intro text-muted">Color Clear</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Kitchen/S&P bond lined highball set.jfif" alt="..." />
+                                <p>is ideal for displaying fruits, other interesting fillers or display it on its own
+                                    for a daring look. Measuring 30 x 12cm, this decorative piece has a unique oil sleek
+                                    finish that instantly adds flair to any home atmosphere. Express your personality in
+                                    the home you love with Salt&Pepper.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price:</strong>
+                                        R 249,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Kitchen & Dining
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Certified egyptian cotton duvet cover set</h2>
+                                <p class="item-intro text-muted">Color Teal/Beige/Ochre/Grey/White/Blue</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/Bathroom/Bathroom1.jpg"
+                                    alt="..." />
+                                <p>Produced from Certified 100% Egyptian Cotton in classic 300 thread count cotton
+                                    sateen. You’ll love the cool, crisp feel, ideal for everyday use. Unlike regular
+                                    cotton, authentic Egyptian Cotton is delicately hand-picked to maintain the strength
+                                    and durability of each tiny fibre.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price</strong>
+                                        R 1 499,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Bedroom & Bathroom
+                                    </li>
+                                </ul>
+                             <!--    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Pillowcase tiffany 2pack 200 threadcount</h2>
+                                <p class="item-intro text-muted">Color Blue/White/Grey</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Bedroom/pillowcase tiffany 2pack - Copy.jfif" alt="..." />
+                                <p>Your bed linen is the one thing that you never compromise on quality. You love the
+                                    feel of high threadcount cotton against your face as you cuddle under covers, one of
+                                    life's better luxuries. Treat yourself to this 200-threadcount pillowcase.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price</strong>
+                                        R 299,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Bedroom & Bathroom
+                                    </li>
+                                </ul>
+                                <!-- <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Gosling muslin blanket honey pink bunny 3pc set</h2>
+                                <p class="item-intro text-muted">Color White/Pink</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Bedroom/Gosling muslin blanket honey pink bunny 3pc set - Copy.jfif"
+                                    alt="..." />
+                                <p>This sweet printed set is made from super soft 100% cotton double muslin featuring
+                                    the Gosling Babies On Safari print. Use them as burping cloths, a lightweight
+                                    security blanket or in your nappy bag for wiping up spills.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price</strong>
+                                        R 799,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Bedroom & Bathroom
+                                    </li>
+                                </ul>
+                             <!--    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Towel ribbed wave</h2>
+                                <p class="item-intro text-muted">Color Blue/Grey/White/Purple</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/Bedroom/towel ribbed wave - Copy.jfif" alt="..." />
+                                <p>Wrap yourself up in plush, soft cotton. Choose a premium everyday towel for extra
+                                    comfort, quality and style in the colour that complements your look. These ribbed
+                                    towels are a 100% cotton, easy care essential for your bathroom.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price</strong>
+                                        R 129,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Bedroom & Bathroom
+                                    </li>
+                                </ul>
+                              <!--   <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Alessi gianni canister</h2>
+                                <p class="item-intro text-muted">Color Clear</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/NewInStore/glass container chalk label 1200ml1.jfif" alt="..." />
+                                <p>These are created by one of the youngest designers in Alessi's catalogue, in an
+                                    original interpretation of the classic kitchen jar, where the design is inside the
+                                    jar.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price</strong>
+                                        R 599, 00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        New in Store
+                                    </li>
+                                </ul>
+                             <!--    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Everdure cube bbq charcoal orange</h2>
+                                <p class="item-intro text-muted">Color Orange/Black</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/NewInStore/everdure cube bbq charcoal stone1.jfif" alt="..." />
+                                <p>Everdure will help you unleash your creativity and bring out the best in barbequed
+                                    food, whether you love the convenience of cooking on gas or want to connect with the
+                                    primal beauty of cooking on charcoal. Now you can enjoy authentic charcoal cooking
+                                    on the go, without the mess</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price</strong>
+                                        R 2 753, 10
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        New in Store
+                                    </li>
+                                </ul>
+                               <!--  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">brabantia peg bag black</h2>
+                                <p class="item-intro text-muted">Color Black</p>
+                                <p>Love smart laundry with Brabantia. Everything you need to make laundry day brighter.
+                                    Keep all your pegs neatly packed away in this cloth peg bag.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price</strong>
+                                        R 299,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        New in Store
+                                    </li>
+                                </ul>
+                             <!--    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Simply stored cutlery tray acrylic max</h2>
+                                <p class="item-intro text-muted">Color Clear</p>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="assets/img/NewInStore/simply stored cutlery tray acrylic max.jfif" alt="..." />
+                                <p>Our new Simply Stored range is here to help you get organized and stay organized,
+                                    creating a home that is a joy to be in, always. Keep everything in its place and
+                                    create calm with these acrylic drawer organisers. Here’s to a life lived with less
+                                    fuss and more meaning.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Price</strong>
+                                        R 499,00
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        New in Store
+                                    </li>
+                                </ul>
+                              <!--   <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Add to cart.
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+
+        // let shoppi = document.getElementById("shoppi");
+
+    </script>
+</body>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+
+</html>

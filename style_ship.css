@@ -1,0 +1,471 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  background-image: url("img/factory.jpg");
+  margin: 0;
+  background: #262c37;
+  color: #262c37;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+/* form and fieldsets */
+
+form {
+  padding: 2rem 1rem 1rem;
+  margin: 0 auto;
+  max-width: 42rem;
+  width: 100%;
+  background: white;
+  /*  removes white space from inline-block els  */
+  font-size: 0;
+}
+
+fieldset {
+  border: 0.15rem solid transparent;
+  border-image: linear-gradient(to top, silver, black, grey);
+  border-image-slice: 1;
+  padding: 1rem;
+}
+
+legend {
+  font-size: 1.2rem;
+}
+
+
+/* input and labels */
+
+.input-wrapper {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  padding: 1rem;
+  font-size: 1.15rem;
+}
+
+.lg-third {
+  max-width: 14rem;
+}
+
+label,
+input,
+button {
+  outline: 0;
+  border-radius: 0;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+input[type="text"] + label,
+input[type="text"],
+input[type="checkbox"],
+input[type="checkbox"] + label {
+  display: inline-block;
+  outline: 0;
+}
+
+input[type="text"] {
+  height: 3.4rem;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-left: 0.45em;
+  padding-bottom: 0.25em;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: 0;
+  box-shadow: inset 0 0 0 0.2rem silver;
+}
+
+input[type="text"]:focus,
+input[type="text"].open {
+  color: #262c37;
+  background: #fff;
+  box-shadow: inset 0 1.5rem 0 #262c37, inset 0 0 0 0.2rem silver;
+}
+
+input[type="text"] ~ label {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  width: 85%;
+  padding: 0 0.5em 0.5em;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+input[type="text"]:focus ~ label,
+input[type="text"].open ~ label {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  -webkit-transform: scale(0.8) translateX(-13%) translateY(-1.6rem);
+  transform: scale(0.8) translateX(-13%) translateY(-1.6rem);
+}
+
+
+/* shipping same as billing */
+
+input[type="checkbox"] {
+  margin-left: 1rem;
+  opacity: 0;
+}
+
+input[type="checkbox"],
+input[type="checkbox"] + label {
+  color: #272727;
+  position: relative;
+  padding: 1rem 1rem 0.5rem;
+  margin: 1rem 0;
+  font-size: 1.15rem;
+}
+
+input[type="checkbox"] + label::before,
+input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute;
+}
+
+input[type="checkbox"] + label::before {
+  height: 1rem;
+  width: 1rem;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #272727;
+  top: 1.15em;
+  left: -0.5rem;
+}
+
+input[type="checkbox"] + label::after {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+input[type="checkbox"]:focus + label {
+  font-weight: 700;
+  border-bottom: 0.25em solid silver;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: 700;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background: silver;
+  box-shadow: inset 0 0 0 1px silver;
+}
+
+input[type="checkbox"]:checked + label::after {
+  height: 0.8rem;
+  width: 0.256rem;
+  border-color: #262c37;
+  border-style: solid;
+  border-width: 0 0.125rem 0.125rem 0;
+  border-radius: 0.125rem;
+  left: -0.15rem;
+  top: 1em;
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+
+
+/* hiding the billing section if checkbox is checked */
+
+input[type="checkbox"]:checked ~ fieldset {
+  display: none;
+}
+
+
+/* submit section */
+
+.submit-wrap {
+  margin: auto;
+  max-width: 42rem;
+}
+
+.btn {
+  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  width: 100%;
+  margin: 2rem 0 1rem;
+  border: 3px solid #ffdf00;
+  border-radius: 0;
+  background: greenyellow
+ color: #262c37;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: greenyellow;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 0.4s cubic-bezier(0, .61, .89, .3);
+}
+
+.btn:focus,
+.btn:hover {
+  background: transparent;
+  color: #272727;
+  border: 5px solid #272727;
+}
+
+.btn:active::before {
+  transform: translateX(0);
+}
+
+.btn:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+@media screen and (min-width: 40rem) {
+  .container {
+    max-width: 54rem;
+    margin: 2rem auto;
+  }
+  .input-wrapper {
+    display: inline-block;
+  }
+  .lg-half {
+    width: 50%;
+  }
+  .lg-third {
+    width: 33.3333%;
+  }
+  .two-thirds {
+    width: 66.6666%;
+  }
+  .btn,
+  legend {
+    font-size: 1.4rem;
+    font-style: initial;
+  }
+}
+
+@media screen and (min-width: 40rem) and (min-height: 67.5rem) {
+  .container {
+    position: absolute;
+    width: 100%;
+    max-width: 54rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-items: center;
+  }
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: flex;
+  justify-items: center;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*..................................<style for animation>.................*/
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      img {
+        vertical-align: middle;
+        align-content: center;
+      }
+      
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: flex;
+        justify-content: center;
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+      .row{
+        display: flex;
+        text-align: center;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        align-items: center;
+        clear: both;
+      }
+      
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+      
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+  
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      
